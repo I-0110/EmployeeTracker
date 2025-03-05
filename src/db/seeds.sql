@@ -10,9 +10,9 @@ INSERT INTO departments (department_id, department) VALUES
 
 -- Inserting data into roles table
 INSERT INTO roles (role_id, title, salary, department_id) VALUES
-(10, 'Coffee Shop Manager', 45000, 1),
-(11, 'Head Barista', 30000, 1),
-(12, 'Barista', 25000, 1),
+(10, 'Coffee Shop Manager', 45000, 8),
+(11, 'Head Barista', 30000, 8),
+(12, 'Barista', 25000, 8),
 (20, 'Kitchen Manager', 40000, 2),
 (21, 'Line Cook', 30000, 2),
 (30, 'HR Manager', 40000, 3),
