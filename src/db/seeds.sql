@@ -1,6 +1,6 @@
 -- Inserting data into departments table
 INSERT INTO departments (department_id, department) VALUES
-(1, 'Front of House (FOH)'),
+(8, 'Front of House (FOH)'),
 (2, 'Back of House (BOH)'),
 (3, 'Human Resources (HR)'),
 (4, 'Finance & Accounting'),
