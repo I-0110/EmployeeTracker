@@ -7,11 +7,11 @@ CREATE DATABASE employees_db;
 -- Creating departments table
 CREATE TABLE departments (
     department_id SERIAL PRIMARY KEY,
-    name VARCHAR(30) NOT NULL
+    department VARCHAR(30) NOT NULL
 );
 
 -- Creating role table
-CREATE TABLE role (
+CREATE TABLE roles (
     role_id SERIAL PRIMARY KEY,
     title VARCHAR(30) NOT NULL,
     salary DECIMAL,
@@ -21,11 +21,11 @@ CREATE TABLE role (
 );
 
 -- Creating employee table
-CREATE TABLE employee (
+CREATE TABLE employees (
     employee_id INTEGER PRIMARY KEY,
     employee_first_name VARCHAR(30),
     employee_last_name VARCHAR(30),
-    FOREIGN KEY (role_id_id)
+    FOREIGN KEY (role_id)
     REFERENCES role(role_id)
     ON DELETE SET NULL,
     manager_id INTEGER
