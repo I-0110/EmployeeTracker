@@ -28,5 +28,5 @@ CREATE TABLE employees (
     FOREIGN KEY (role_id)
     REFERENCES role(role_id)
     ON DELETE SET NULL,
-    manager_id INTEGER
+    manager_id INTEGER PRIMARY KEY
 );
