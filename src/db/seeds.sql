@@ -9,14 +9,23 @@ INSERT INTO departments (department_id, department) VALUES
 (7, 'Supply Chain/Inventory Management');
 
 -- Inserting data into employee table
-INSERT INTO roles (role_id, title, salary, department) VALUES
+INSERT INTO roles (role_id, title, salary, department_id) VALUES
+(10, 'Coffee Shop Manager', 45000, 1),
+(11, 'Head Barista', 30000, 1),
+(12, 'Barista', 25000, 1)
+(20, 'Kitchen Manager', 40000, 2),
+(21, 'Line Cook', 30000, 2),
+(30, 'HR Manager', 35000, 3),
+(40, 'Accountant', 52000, 4),
+(50, 'Marketing Manager', 50000, 5),
+(60, 'Customer Service Specialist', 35000, 6),
+(70, 'Inventory Management', 55000, 7);
+
+INSERT INTO employees (employee_id, employee_first_name, employee_last_name, role_id,manager_id) VALUES
+()
+
  
 
 
 
 
--- (1, 'Coffee Shop Manager'),
--- (2, 'Head Barista'),
--- (3, 'Kitchen Manager'),
--- (4, 'Marketing Manager'),
--- (5, 'HR Specialist'),
