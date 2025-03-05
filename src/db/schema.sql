@@ -1,8 +1,8 @@
 DROP DATABASE IF EXISTS
-employee_db;
+employees_db;
 CREATE DATABASE employees_db;
 
-\c employee_db;
+\c employees_db;
 
 -- Creating departments table
 CREATE TABLE departments (
@@ -26,7 +26,7 @@ CREATE TABLE employees (
     employee_first_name VARCHAR(30),
     employee_last_name VARCHAR(30),
     FOREIGN KEY (role_id)
-    REFERENCES role(role_id)
+    REFERENCES roles(role_id)
     ON DELETE SET NULL,
-    manager_id INTEGER PRIMARY KEY
+    manager_id INTEGER
 );
