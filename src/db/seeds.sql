@@ -23,18 +23,18 @@ INSERT INTO roles (role_id, title, salary, department_id) VALUES
 
 -- Inserting data into employees table
 INSERT INTO employees (employee_id, employee_first_name, employee_last_name, role_id, manager_id) VALUES
-(100, 'Emily', 'Brown', 10, 1),
-(110, 'Ben', 'Johnson', 11, 7),
-(111, 'Michael', 'Glenn', 12, NULL),  
-(112, 'Tricia', 'Mars', 12, NULL),    
-(200, 'Lisa', 'Green', 20, 2),
-(201, 'Melinda', 'Glenn', 21, NULL),  
-(500, 'Mark', 'White', 50, 3),
-(300, 'Kelly', 'Black', 30, 4),
+(100, 'Emily', 'Brown', 10, NULL),
+(110, 'Ben', 'Johnson', 11, NULL),
+(111, 'Michael', 'Glenn', 12, 110),  
+(112, 'Tricia', 'Mars', 12, 111),    
+(200, 'Lisa', 'Green', 20, NULL),
+(201, 'Melinda', 'Glenn', 20, 200),  
+(500, 'Mark', 'White', 50, NULL),
+(300, 'Kelly', 'Black', 30, NULL),
 (400, 'Ben', 'Adams', 40, NULL),      
-(600, 'Cristina', 'Allende', 60, 5),
-(601, 'Marco', 'Polo', 60, NULL),     
-(700, 'Claude', 'Marchaud', 70, 6);
+(600, 'Cristina', 'Allende', 60, NULL),
+(601, 'Marco', 'Polo', 60, 600),     
+(700, 'Claude', 'Marchaud', 70, NULL);
 
 
  
