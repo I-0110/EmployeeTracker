@@ -36,6 +36,7 @@ INSERT INTO employee (employee_id, employee_first_name, employee_last_name, role
 (601, 'Marco', 'Polo', 60, 600),     
 (700, 'Claude', 'Marchaud', 70, NULL);
 
+SELECT * FROM employee;
 
  
 
