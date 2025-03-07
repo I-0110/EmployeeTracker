@@ -1,14 +1,14 @@
 SELECT *
 FROM employees_db;
 
-SELECT departments, COUNT(id) AS role_id
-FROM roles
-GROUP BY departments;
+SELECT department, COUNT(id) AS role_id
+FROM role
+GROUP BY department;
 
-SELECT roles, COUNT(id) AS employee_id
-FROM employees
-GROUP BY roles;
+SELECT role, COUNT(id) AS employee_id
+FROM employee
+GROUP BY role;
 
-SELECT employees, COUNT(id) AS manager_id
-FROM employees 
-GROUP BY employees;
+SELECT employee, COUNT(id) AS manager_id
+FROM employee 
+GROUP BY employee;
