@@ -1,5 +1,5 @@
--- Inserting data into departments table
-INSERT INTO departments (department_id, department) VALUES
+-- Inserting data into department table
+INSERT INTO department (department_id, name) VALUES
 (8, 'Front of House (FOH)'),
 (2, 'Back of House (BOH)'),
 (3, 'Human Resources (HR)'),
@@ -8,7 +8,7 @@ INSERT INTO departments (department_id, department) VALUES
 (6, 'Customer Service'),
 (7, 'Inventory');
 
--- Inserting data into roles table
+-- Inserting data into role table
 INSERT INTO roles (role_id, title, salary, department_id) VALUES
 (10, 'Coffee Shop Manager', 45000, 8),
 (11, 'Head Barista', 30000, 8),
@@ -21,8 +21,8 @@ INSERT INTO roles (role_id, title, salary, department_id) VALUES
 (60, 'Customer Service Specialist', 35000, 6),
 (70, 'Inventory Management', 55000, 7);
 
--- Inserting data into employees table
-INSERT INTO employees (employee_id, employee_first_name, employee_last_name, role_id, manager_id) VALUES
+-- Inserting data into employee table
+INSERT INTO employee (employee_id, employee_first_name, employee_last_name, role_id, manager_id) VALUES
 (100, 'Emily', 'Brown', 10, NULL),
 (110, 'Ben', 'Johnson', 11, NULL),
 (111, 'Michael', 'Glenn', 12, 110),  
